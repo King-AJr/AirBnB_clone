@@ -9,4 +9,8 @@
 # Temporarily created file from running console
 file.json
 
+*.pyc
+
+*.idea
+
 generate_authors.sh
