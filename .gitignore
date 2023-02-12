@@ -14,3 +14,5 @@ file.json
 *.idea
 
 generate_authors.sh
+
+DS_Store
