@@ -19,6 +19,7 @@ class BaseModel:
         to_dict(self)
 
     """
+
     def __init__(self, *args, **kwargs):
         """
         Initializes attributes
@@ -30,9 +31,13 @@ class BaseModel:
         if kwargs is not None and len(kwargs) > 0:
             for k, v in kwargs.items():
                 if k == "created_at":
-                    self.created_at = datetime.strptime(kwargs['created_at'], "%Y-%m-%dT%H:%M:%S.%f")
+                    self.created_at = datetime.strptime(
+                        kwargs["created_at"], "%Y-%m-%dT%H:%M:%S.%f"
+                    )
                 elif k == "updated_at":
-                    self.updated_at = datetime.strptime(kwargs['updated_at'], "%Y-%m-%dT%H:%M:%S.%f")
+                    self.updated_at = datetime.strptime(
+                        kwargs["updated_at"], "%Y-%m-%dT%H:%M:%S.%f"
+                    )
                 elif k == "__class__":
                     pass
                 else:
