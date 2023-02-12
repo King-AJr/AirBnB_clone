@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 Module - console
-
 command interpreter
 """
 import cmd
@@ -214,7 +213,6 @@ class HBNBCommand(cmd.Cmd):
                 print("*** Unknown syntax {}".format(line))
         except IndexError:
             print("*** Unknown syntax {}".format(line))
-
 
 def parse(arg):
     """
