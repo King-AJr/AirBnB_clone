@@ -137,7 +137,7 @@ class HBNBCommand(cmd.Cmd):
         if len(args) >= 4:
             key = "{}.{}".format(args[0], args[1])
             cast = type(args[3])
-            attrib_value = cast(args[3])
+            attrib_value = cast(args3)
             setattr(storage.all()[key], args[2], attrib_value)
             storage.all()[key].save()
         elif len(args) == 0:
