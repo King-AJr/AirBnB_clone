@@ -32,11 +32,11 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def do_EOF(self, line):
-        """ End of file command to interrupt the console """
+        """ End of file command to interrupt the console \n"""
         return True
 
     def do_quit(self, line):
-        """ Quit command to exit program """
+        """ Quit command to exit program \n"""
         return True
 
     def emptyline(self):
@@ -46,7 +46,7 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, line):
         """
         Creates an instance of the class
-        BaseModel and it's Subclasses
+        BaseModel and it's Subclasses \n
         """
         if len(line) == 0:
             print("** class name missing **")
@@ -63,7 +63,7 @@ class HBNBCommand(cmd.Cmd):
         the class name and id
 
         :param line:
-        :return:
+        :return: \n
         """
         args = parse(line)
         if len(line) == 0:
@@ -85,7 +85,7 @@ class HBNBCommand(cmd.Cmd):
         and id
 
         :param line:
-        :return:
+        :return: \n
         """
         args = parse(line)
         if len(line) == 0:
@@ -107,7 +107,7 @@ class HBNBCommand(cmd.Cmd):
         subclass
 
         :param line:
-        :return:
+        :return: \n
         """
         args = parse(line)
         obj_list = []
@@ -130,7 +130,7 @@ class HBNBCommand(cmd.Cmd):
         and attribute value
 
         :param line:
-        :return:
+        :return:\n
         """
         args = parse(line)
         if len(args) >= 4:
@@ -158,7 +158,7 @@ class HBNBCommand(cmd.Cmd):
         Usage: Class.count()
 
         Args:
-            line
+            line \n
         """
         if line in self.classes:
             count = 0
@@ -219,7 +219,7 @@ def parse(arg):
     Helper function to parse
     arguments
     Args:
-        arg
+        arg\n
     """
     curly_braces = re.search(r"\{(.*?)\}", arg)
     brackets = re.search(r"\[(.*?)\]", arg)
