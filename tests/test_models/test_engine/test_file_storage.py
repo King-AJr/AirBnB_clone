@@ -68,6 +68,12 @@ class TestFileStorage(unittest.TestCase):
         #print(instances_dic[key])
         self.assertIsNotNone(instances_dic[key])
 
+    def test_save(self):
+        """
+        Test method: save (saves the dictionary from new into a json file)
+        """
+        pass
+
     def test_reload(self):
         """
         Tests method: reload (reloads objects from string file)
