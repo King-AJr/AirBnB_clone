@@ -4,6 +4,12 @@
     width: 100%;
 }
 
+.places h1 {
+    text-align: left;
+    font-size: 30px;
+    width: 100%;
+}
+
 .places article {
     display: inline-block;
     width: 390px;
